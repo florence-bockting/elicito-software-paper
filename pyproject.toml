@@ -1,0 +1,9 @@
+[project]
+name = "elicito-software-paper"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "tensorflow-probability>=0.25.0",
+    "elicito == 0.5.4"
+]

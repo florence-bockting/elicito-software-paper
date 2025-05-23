@@ -1,0 +1,2 @@
+tensorflow-probability>=0.25.0
+elicito==0.5.4
