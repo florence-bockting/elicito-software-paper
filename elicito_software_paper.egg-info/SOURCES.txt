@@ -1,9 +1,0 @@
-LICENSE
-README.md
-main.py
-pyproject.toml
-elicito_software_paper.egg-info/PKG-INFO
-elicito_software_paper.egg-info/SOURCES.txt
-elicito_software_paper.egg-info/dependency_links.txt
-elicito_software_paper.egg-info/requires.txt
-elicito_software_paper.egg-info/top_level.txt
