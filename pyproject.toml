@@ -1,0 +1,24 @@
+[project]
+name = "elicito-software-paper"
+version = "0.1.0"
+description = "Supplementary material for elicito software paper"
+requires-python = ">=3.11"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSES/*"]
+authors = [
+    { name = "Florence Bockting" },
+]
+maintainers = [
+    { name = "Florence Bockting" },
+]
+dependencies = [
+    "tensorflow",
+    "tensorflow-probability>=0.25.0",
+    "elicito[full] == 0.5.4",
+    "matplotlib"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

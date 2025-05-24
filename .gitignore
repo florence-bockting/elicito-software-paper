@@ -1,0 +1,10 @@
+# workspace for JetBrain IDE
+.idea/
+
+# internal notes
+TODO.md
+
+# large files
+saved_eliobj
+
+

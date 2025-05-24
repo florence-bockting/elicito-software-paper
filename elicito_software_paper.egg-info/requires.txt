@@ -1,0 +1,4 @@
+tensorflow
+tensorflow-probability>=0.25.0
+elicito[full]==0.5.4
+matplotlib
