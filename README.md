@@ -1,13 +1,22 @@
-# elicito-software-paper
-Supplementary material for the `elicito` software paper.
+# Supplementary material for the `elicito` software paper
+This repository provides the supplementary material for the paper: 
+> Bockting, F. & Bürkner, P-C. (2025). *elicito: A Python Package for Expert 
+> Prior Elicitation*
 
-## Toy examples 
-**Simulation scripts** for both toy examples presented in the paper are available
++ Preprint: [ToDo ArXiv Link]
++ Publication status: [ToDo]
+
+## Reproducing the reported toy examples
+Toy examples presented in the paper are based on `elicito (v0.5.5)`.
+For further information on our `elicito` Package see the corresponding
+[GitHub Repository](https://github.com/florence-bockting/elicito).
+
+**Simulation scripts** for both toy examples are available
 in the `toy-examples` folder.
 
 The resulting **simulation plots** are saved in the `saved_plots` folder. 
 
-AAdditionally, the corresponding Jupyter notebooks for each simulation script are
+Additionally, the corresponding Jupyter notebook for each simulation script is
 provided in the `notebooks` folder. 
 These notebooks can be executed directly online via Binder using the links below:
 
