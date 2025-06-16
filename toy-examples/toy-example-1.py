@@ -16,8 +16,7 @@ class GenerativeModel:
         # data-generating model
         y = tfd.Normal(loc=mu, scale=sigma).sample()
         # selected observations per group
-        (y_gr0, y_gr1, y_gr2) = (y[:, :, i::] for i,j in zip(
-            [0,n_gr,2*n_gr],[n_gr,2*n_gr,-1]))
+        (y_gr0, y_gr1, y_gr2) = (y[:, :, i:i+30] for i in [0,30,60])
         return dict(y_gr0=y_gr0, y_gr1=y_gr1,
                     y_gr2=y_gr2, mu=mu, y=y)
 
@@ -114,6 +113,7 @@ eliobj = el.Elicit(
 eliobj.fit(parallel=el.utils.parallel(runs=5))
 #%%
 eliobj.save(file="saved_eliobj/eliobj_param")
+#eliobj = el.utils.load(file="saved_eliobj/eliobj_param.pkl")
 #%%
 el.plots.loss(eliobj, figsize=(6,2), save_fig="saved_plots/loss_param.png")
 #%%

@@ -17,8 +17,8 @@ class GenerativeModel:
         # data-generating model
         y = tfd.Normal(loc=mu, scale=sigma).sample()
         # selected observations per group
-        (y_gr0, y_gr1, y_gr2) = (y[:, :, i::] for i,j in zip(
-            [0,n_gr,2*n_gr],[n_gr,2*n_gr,-1]))
+        (y_gr0, y_gr1, y_gr2) = (y[:, :, i:i+30] for i in [0,30,60])
+
         return dict(y_gr0=y_gr0, y_gr1=y_gr1,
                     y_gr2=y_gr2, mu=mu, y=y)
 
@@ -143,7 +143,7 @@ optimizer_deep=el.optimizer(
 
 trainer_deep=el.trainer(
     method="deep_prior",
-    seed=2025,
+    seed=1234,
     epochs=800,
     progress=0
 )
@@ -192,7 +192,7 @@ el.plots.hyperparameter(eliobj_deep, figsize=(6,2), save_fig="saved_plots/hyperp
 el.plots.elicits(eliobj_deep, cols=5, figsize=(7,2),
                  save_fig="saved_plots/elicits_deep.png")
 #%%
-el.plots.prior_joint(eliobj_deep, save_fig="saved_plots/prior_joint_deep.png")
+el.plots.prior_joint(eliobj_deep, idx=list(range(5)), save_fig="saved_plots/prior_joint_deep.png")
 
 #%%
 el.plots.prior_marginals(eliobj_deep, figsize=(6,2),
