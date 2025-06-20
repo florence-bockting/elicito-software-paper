@@ -7,7 +7,8 @@ This repository provides the supplementary material for the paper:
 + Publication status: [ToDo]
 
 ## Reproducing the reported toy examples
-Toy examples presented in the paper are based on `elicito (v0.5.5)`.
+Toy examples presented in the paper are based on elicito (v0.6.0)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15671710.svg)](https://doi.org/10.5281/zenodo.15671710).
 For further information on our `elicito` Package see the corresponding
 [GitHub Repository](https://github.com/florence-bockting/elicito).
 

@@ -15,7 +15,7 @@ maintainers = [
 dependencies = [
     "tensorflow",
     "tensorflow-probability>=0.25.0",
-    "elicito[full] == 0.5.4",
+    "elicito[full] == 0.6.0",
     "matplotlib"
 ]
 

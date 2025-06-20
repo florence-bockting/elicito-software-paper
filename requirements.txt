@@ -27,7 +27,7 @@ decorator==5.2.1
     # via tensorflow-probability
 dm-tree==0.1.9
     # via tensorflow-probability
-elicito==0.5.4
+elicito==0.6.0
     # via elicito-software-paper (pyproject.toml)
 flatbuffers==25.2.10
     # via tensorflow
