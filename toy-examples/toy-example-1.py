@@ -123,4 +123,5 @@ el.plots.elicits(eliobj, figsize=(6,2), save_fig="saved_plots/elicits_param.png"
 #%%
 el.plots.prior_marginals(eliobj, figsize=(6,2), save_fig="saved_plots/prior_marginals_param.png")
 #%%
+# this approach requires sampling and takes a few seconds; you can reduce n_sim to speed it up
 el.plots.prior_averaging(eliobj, figsize=(6,3.5), xlim_weights=0.3, save_fig="saved_plots/prior_averaging_param.png")
