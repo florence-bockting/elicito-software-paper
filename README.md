@@ -3,8 +3,8 @@ This repository provides the supplementary material for the paper:
 > Bockting, F. & Bürkner, P-C. (2025). *elicito: A Python Package for Expert 
 > Prior Elicitation*
 
-+ Preprint: [ToDo ArXiv Link]
-+ Publication status: [ToDo]
++ Preprint: *ArXiv link will follow soon*
++ Publication status: *preprint submitted* 
 
 ## Reproducing the reported toy examples
 Toy examples presented in the paper are based on elicito (v0.6.0)
